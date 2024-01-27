@@ -4,7 +4,18 @@ $dropdown-min-width: 0;
 $dropdown-border-width: 0;
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap');
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./step.scss";
+@import "./price-cards.scss";
+
+
+.card-transition {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card-transition:hover{
+    top: -10px;
+}
 
 .bg-clip-path {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
