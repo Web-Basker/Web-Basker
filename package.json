@@ -1,0 +1,18 @@
+{
+  "name": "webbasetemplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "sass --no-source-map public/css/site.scss public/css/site.css --style compressed && purgecss --css public/css/site.css --content public/*.html --output public/css/",
+    "watch": "sass --no-source-map --watch public/css/site.scss public/css/site.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "purgecss": "^5.0.0",
+    "sass": "^1.72.0"
+  }
+}

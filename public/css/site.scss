@@ -1,0 +1,88 @@
+$headings-font-family: 'Playfair Display', serif;
+$font-family-sans-serif: 'Inter', sans-serif;
+$dropdown-min-width: 0;
+$dropdown-border-width: 0;
+$primary: #212529;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap');
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./price-cards.scss";
+
+
+.card-transition {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card-transition:hover{
+    top: -10px;
+}
+
+.bg-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.bg-wave {
+    background-image: url("../images/Wave.svg");
+    background-size: cover;
+}
+
+.btn-ghost-light {
+    color: #f7faff;
+    background-color: transparent;
+}
+
+.btn-ghost-light:hover {
+    color: #f7faff;
+    background-color: #fdc82c;
+    border-color: transparent;
+}
+
+.content-space-2 {
+    padding-top: 5rem!important;
+    padding-bottom: 5rem!important;
+}
+
+.btn-icon.btn-xs {
+    font-size: .75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.btn-check:focus+.btn-soft-secondary, .btn-soft-secondary:focus, .btn-soft-secondary:hover {
+    color: #fff;
+}
+
+.btn-check:focus+.btn-soft-secondary, .btn-soft-secondary:focus, .btn-soft-secondary:hover {
+    color: #fff;
+    background-color: #59799c;
+    border-color: transparent;
+}
+
+.btn-icon {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 3.125rem;
+    height: 3.125rem;
+    padding: 0;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.lang{
+     position:fixed;
+     bottom:1rem;
+     left: 1%;
+}
+
+.contact-form {
+    background: linear-gradient($primary 50%, transparent 40%) no-repeat;
+}
