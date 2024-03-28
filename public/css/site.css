@@ -11885,6 +11885,17 @@ textarea.form-control-lg {
   border-color: transparent;
 }
 
+.btn-ghost-dark {
+  color: #212529;
+  background-color: transparent;
+}
+
+.btn-ghost-dark:hover {
+  color: #f7faff;
+  background-color: #212529;
+  border-color: transparent;
+}
+
 .content-space-2 {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
