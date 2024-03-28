@@ -8,6 +8,11 @@ $primary: #212529;
 @import "./price-cards.scss";
 
 
+
+section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
 .card-transition {
     position: relative;
     top: 0;
@@ -19,7 +24,13 @@ $primary: #212529;
 }
 
 .bg-clip-path {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    clip-path: none;
+}
+
+@media (min-width:992px) {
+    .bg-clip-path {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
 }
 
 .bg-wave {
@@ -30,28 +41,29 @@ $primary: #212529;
 .btn-ghost-light {
     color: #f7faff;
     background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
 }
 
 .btn-ghost-light:hover {
     color: #f7faff;
     background-color: #fdc82c;
     border-color: transparent;
+    text-decoration: none;
 }
 
 .btn-ghost-dark {
     color: $primary;
     background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
 }
 
 .btn-ghost-dark:hover {
     color: #f7faff;
     background-color: $primary;
     border-color: transparent;
-}
-
-.content-space-2 {
-    padding-top: 5rem!important;
-    padding-bottom: 5rem!important;
+    text-decoration: none;
 }
 
 .btn-icon.btn-xs {

@@ -11855,6 +11855,11 @@ textarea.form-control-lg {
     width: 75% !important;
   }
 }
+section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
 .card-transition {
   position: relative;
   top: 0;
@@ -11866,9 +11871,14 @@ textarea.form-control-lg {
 }
 
 .bg-clip-path {
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: none;
 }
 
+@media (min-width: 992px) {
+  .bg-clip-path {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  }
+}
 .bg-wave {
   background-image: url("../images/Wave.svg");
   background-size: cover;
@@ -11877,28 +11887,29 @@ textarea.form-control-lg {
 .btn-ghost-light {
   color: #f7faff;
   background-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .btn-ghost-light:hover {
   color: #f7faff;
   background-color: #fdc82c;
   border-color: transparent;
+  text-decoration: none;
 }
 
 .btn-ghost-dark {
   color: #212529;
   background-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .btn-ghost-dark:hover {
   color: #f7faff;
   background-color: #212529;
   border-color: transparent;
-}
-
-.content-space-2 {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+  text-decoration: none;
 }
 
 .btn-icon.btn-xs {
