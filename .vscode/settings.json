@@ -1,5 +1,5 @@
 {
-  "liveServer.settings.root": "public/",
+  "liveServer.settings.root": "/",
   "css.styleSheets": [
     "public/css/site.css",
     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
